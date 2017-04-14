@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<!--Título de la pestaña en el navegador-->
+<title>Moca Group.LLC</title>
+<meta charset="UTF-8">
+<!--Ajuste Responsivo-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Conexión a la biblioteca CSS de w3Schools-->
+<link rel="stylesheet" href="css/w3schools.css">
+<!--Conexión a Biblioteca de fuentes de Google-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<!--Conexión a la biblioteca CSS para las configuraciones de tamaño adaptable-->
+<link rel="stylesheet" href="css/responsive.css">
+
+	
+<head>
+<!--Conexión al mini icono de la pestaña en el navegador-->
+<link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
+<link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
+</head>	
+
+<!--Estilos CSS-->
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+	
+	
+<body>
+	
+<!--Menú Desplegable Izquierdo-->
+<nav class="w3-sidenav w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background:black" id="mySidenav"><br>
+
+<!--Botón Cerrar Menú: Solo aparece en pantallas pequeñas-->
+<a href="javascript:void(0)" onclick="w3_close()" class="w3-padding-xlarge w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px;color:#8A0808">Close Menu X</a>
+
+<!--Container del logo Moca en el menú desplegable-->
+<div class="w3-container">
+<h3 class="w3-padding-64"><img src="pictures/logo1.png" width="250" height="100" class="logo-menu"></h3>
+</div>
+	
+  <!--Botones del menú desplegable-->	
+  <a href="index.html" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#8A0808">Home</a>
+  <a href="index.html#showcase" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#8A0808">Timing Belt Kits</a> 
+  <a href="index.html#services" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#8A0808">Strut Assembly</a>
+  <a href="index.html#contact" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#8A0808">Contact</a>
+	
+</nav>
+
+<!-- Menú top en pantallas pequeñas-->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-btn w3-gray w3-border w3-border-white w3-margin-right" onclick="w3_open()">☰</a>
+  <span><img src="pictures/logo1.png" width="150" height="80" class="logo-menu"></span>
+</header>
+
+<!-- Efecto al abrir o cerrar el menú desplegable en pantallas pequeñas -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- ¡CONTENEDOR DE LA PÁGINA! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+<!-- Título Timing Belt Kits-->
+<div class="w3-container" style="margin-top:85px" id="showcase">
+ 
+    <h1 class="w3-xxxlarge w3-text-red titulo-seccion"><b>Timing Belt Kits</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+</div>
+  
+<!-- Imágenes de los productos Timing Belt Kits con No. de Referencia y Descripción -->
+<div class="w3-row-padding">
+	
+	<!-- Columna de fotos izquierda -->
+    <div class="w3-half">
+      <img src="pictures/Ancho/TBK0016.jpg" style="width:100%" onclick="onClick(this)" alt="TBK0016" id="Timing Belt Kit for 93-04 Infiniti Nissan Mercury 3.0L V6 VG30E">
+		
+      <img src="pictures/Ancho/TBK0017.png" style="width:100%" onclick="onClick(this)" alt="TBK0017" id="Timing Belt Component Kit fits 2003-2006 Jeep Wrangler Liberty TJ Jeep Wrang">
+		
+      <img src="pictures/Ancho/TBK0019.png" style="width:100%" onclick="onClick(this)" alt="TBK0019" id="Timing Belt Kit for 97-04 Acura CL TL MDX Honda Accord Odyssey J30A J32A J35A">
+		
+	  <img src="pictures/Ancho/TBK0027.png" style="width:100%" onclick="onClick(this)" alt="TBK0027" id="Timing Belt Kit fits 96-00 Plymouth Chrysler Dodge Breeze Voyager G Sebring PT Cruiser">
+		
+	  <img src="pictures/Ancho/TBK0037.png" style="width:100%" onclick="onClick(this)" alt="TBK0037" id="Timing Belt Kit fits 1996-2005 Dodge Chrysler Plymouth 2.0L Neon Breeze Stratus">
+		
+	  <img src="pictures/Ancho/TBK0043.png" style="width:100%" onclick="onClick(this)" alt="TBK0043" id="Timing Belt Kit fits 99-06 Hyundai Kia 2.4L Sonata Optima Santa Fe">
+	</div>
+      <!-- Columna de fotos derecha -->
+      <div class="w3-half">
+      <img src="pictures/Ancho/TBK0021.png" style="width:100%" onclick="onClick(this)" alt="TBK0021" id="Timing Belt Kit Fits 01-11 Hyundai Accent Kia Rio 1.6L G4ED G4EC G4FK">
+		
+      <img src="pictures/Ancho/TBK0024.png" style="width:100%" onclick="onClick(this)" alt="TBK0024" id="Timing Belt Kit fits 03-10 Chrysler Dodge 3.5L 4.0L Pacifica Charger Journey Sebring">
+		
+      <img src="pictures/Ancho/TBK0025.png" style="width:100%" onclick="onClick(this)" alt="TBK0025" id="Timing Belt Kit Fits 03-10 Chrysler Jeep Dodge 2.4L Neon Sebring PT Cruiser">
+		
+	  <img src="pictures/Ancho/TBK0034.png" style="width:100%" onclick="onClick(this)" alt="TBK0034" id="Timing Belt Kit fits 88-95 Honda Civic 1.5L SOHC">
+		  
+	  <img src="pictures/Ancho/TBK0001WP.png" style="width:100%" onclick="onClick(this)" alt="TBK001WP" id="Timing Belt Component Kit fits 01-05 Honda Civic 1.7L">
+		  
+	  <img src="pictures/Ancho/TBK0048.png" style="width:100%" onclick="onClick(this)" alt="TBK0048" id="Timing Belt Kit 92-00 Fits Chrysler Dodge Plymouth Hyundai Mitsubishi 3.0L Voyager Caravan Sonata LeBaron">
+    </div>
+   </div>
+	
+  <!-- Contenedor para imágen que se despliega al hacer clic -->
+  <div id="modal01" class="w3-modal w3-black w3-padding-0" onclick="this.style.display='none'">
+    <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+	  <p id="description"></p>
+    </div>
+  </div>
+
+<!-- FIN DEL CONTENEDOR -->
+</div>
+
+<!-- PIE DE PÁGINA CON LINK A PÁGINA DE INNOVA -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Developed by <a href="https://www.innovaprosystem.com/" title="" target="_blank" class="w3-hover-opacity">Innova Prosystem</a></p></div>
+
+<!-- Scripts -->
+<script>
+// Script para abrir el menú desplegable
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Script para abrir el contenedor de imágenes en tamaño grande
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+  var captionText = document.getElementById("description");
+  captionText.innerHTML = element.id;
+}
+</script>
+
+</body>
+</html>

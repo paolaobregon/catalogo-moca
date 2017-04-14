@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<!--Título de la pestaña en el navegador-->
+<title>Moca Group.LLC</title>
+<meta charset="UTF-8">
+<!--Ajuste Responsivo-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Conexión a la biblioteca CSS de w3Schools-->
+<link rel="stylesheet" href="css/w3Schools.css">
+<!--Conexión a Biblioteca de fuentes de Google-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<!--Conexión a la biblioteca CSS para las configuraciones de tamaño adaptable-->
+<link rel="stylesheet" href="css/responsive.css">
+
+	
+<head>
+<!--Conexión al mini icono de la pestaña en el navegador-->
+<link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
+<link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
+</head>	
+
+<!--Estilos CSS-->
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+	
+	
+<body>
+	
+<!--Menú Desplegable Izquierdo-->
+<nav class="w3-sidenav w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background:black" id="mySidenav"><br>
+
+<!--Botón Cerrar Menú: Solo aparece en pantallas pequeñas-->
+<a href="javascript:void(0)" onclick="w3_close()" class="w3-padding-xlarge w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px;color:#8A0808">Close Menu X</a>
+
+<!--Container del logo Moca en el menú desplegable-->
+<div class="w3-container">
+<h3 class="w3-padding-64"><img src="pictures/logo1.png" width="250" height="100"></h3>
+</div>
+	
+  <!--Botones del menú desplegable-->	
+  <a href="#" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#8A0808">Home</a> 
+  <a href="#showcase" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#8A0808">Timing Belt Kits</a> 
+  <a href="#services" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#8A0808">Strut Assembly</a>
+  <a href="#contact" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#8A0808">Contact</a>
+	
+</nav>
+
+<!-- Menú top en pantallas pequeñas-->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-btn w3-gray w3-border w3-border-white w3-margin-right" onclick="w3_open()">☰</a>
+  <span><img src="pictures/logo1.png" width="150" height="80" class="logo-menu"></span>
+</header>
+
+<!-- Efecto al abrir o cerrar el menú desplegable en pantallas pequeñas -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- ¡CONTENEDOR DE LA PÁGINA! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+<!-- Sección Timing Belt Kits-->
+<div class="w3-container" style="margin-top:80px" id="showcase">
+	<!--Logo principal de Moca-->
+    <h1 class="w3-jumbo"><img src="pictures/logo-moca.jpg" class="logo"></h1>
+	<!--Título Catálogo-->
+	<h1 class="w3-xxxlarge w3-text-black"><b>Catalogue</b></h1>
+	<!-- Título Timing Belt Kits-->
+    <h1 class=" w3-text-red"><b>Timing Belt Kits</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+</div>
+  
+<!-- Imágenes de los productos Timing Belt Kits con No. de Referencia y Descripción -->
+<div class="w3-row-padding">
+	
+	<!-- Columna de fotos izquierda -->
+    <div class="w3-half">
+      <img src="pictures/Ancho/TBK0016.jpg" style="width:100%" onclick="onClick(this)" alt="TBK0016" id="Timing Belt Kit for 93-04 Infiniti Nissan Mercury 3.0L V6 VG30E">
+		
+      <img src="pictures/Ancho/TBK0017.png" style="width:100%" onclick="onClick(this)" alt="TBK0017" id="Timing Belt Component Kit fits 2003-2006 Jeep Wrangler Liberty TJ Jeep Wrang">
+		
+	</div>
+      <!-- Columna de fotos derecha -->
+      <div class="w3-half">
+      <img src="pictures/Ancho/TBK0021.png" style="width:100%" onclick="onClick(this)" alt="TBK0021" id="Timing Belt Kit Fits 01-11 Hyundai Accent Kia Rio 1.6L G4ED G4EC G4FK">
+		
+      <img src="pictures/Ancho/TBK0024.png" style="width:100%" onclick="onClick(this)" alt="TBK0024" id="Timing Belt Kit fits 03-10 Chrysler Dodge 3.5L 4.0L Pacifica Charger Journey Sebring">
+
+    </div>
+   </div>
+	<!--Botón "Ver más"-->
+	<p class="w3-right"><b>View More </b><a href="timingbeltkits.html" title="" target="_blank" class="w3-hover-opacity">Click on here</a></p>
+
+  <!-- Contenedor para imágen que se despliega al hacer clic -->
+  <div id="modal01" class="w3-modal w3-black w3-padding-0" onclick="this.style.display='none'">
+    <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+	  <p id="description"></p>
+    </div>
+  </div>
+
+  <!-- Sección: Strut Assembly (Título) -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Strut Assembly</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+	  
+   <!-- Contenedor de fotos de Strut Assembly -->
+  <div class="w3-row-padding">
+	  
+	  <!--Columna izquierda -->
+    <div class="w3-half">
+      <img src="pictures/Struts/A117312-REF%20MO.%20139104.png" style="width:100%" onclick="onClick(this)" alt="REF No. 139104" id="MOCA No. A117312">
+      <img src="pictures/Struts/MOCA%20NO.%20A117315-REF%20NO.%20139105.png" style="width:100%" onclick="onClick(this)" alt="REF No.139105" id="MOCCA No.A117315">
+    </div>
+      <!-- Columna derecha -->
+    <div class="w3-half">
+      <img src="pictures/Struts/REF%20NO.171111-A21333.png" style="width:100%" onclick="onClick(this)" alt="REF No.171111" id=" MOCCA No. A21333">
+      <img src="pictures/Struts/REF%20NO.171119L-Moca%20No.%20A213357L.png" style="width:100%" onclick="onClick(this)" alt="REF No.171119L" id="MOCCA No. A213357L">
+    </div>
+      <!--Botón "Ver más"-->
+	  <p class="w3-right"><b>View More </b><a href="strutassembly.html" title="" target="_blank" class="w3-hover-opacity">Click on here</a></p>
+  </div>
+
+  <!-- Contenedor desplegable con imágen grande al hacer clic sobre ellas-->
+  <div id="modal01" class="w3-modal w3-black w3-padding-0" onclick="this.style.display='none'">
+    <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+	  <p id="description"></p>
+    </div>
+  </div>
+  </div>
+  
+  <!-- Sección: Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Contact</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <!--Información de Contacto-->
+      <div class="w3-group">
+		  <label><b>Add:</b></label>
+		  <label> 4754 Littlejohn St.Unit B. BaldwinPark, CA. 91706 USA.</label>
+      </div>
+      <div class="w3-group">
+		  <label><b>Tel:</b></label>
+          <label>(626)214-9057</label>
+      </div>
+      <div class="w3-group">
+		  <label><b>Fax:</b></label>
+		  <label>(626)214-9054</label>
+      </div>
+		<div class="w3-group">
+			<label><b>E-Mail:</b></label>
+			<label>aborquez@mocaautoparts.com</label>
+      </div>
+		<div class="w3-group">
+			<label><b>Website:</b></label>
+			<label>www.mocaautoparts.com</label>
+      </div> 
+  </div>
+
+<!-- FIN DEL CONTENEDOR -->
+</div>
+
+<!-- PIE DE PÁGINA CON LINK A PÁGINA DE INNOVA -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Developed by <a href="https://www.innovaprosystem.com/" title="" target="_blank" class="w3-hover-opacity">Innova Prosystem</a></p></div>
+
+<!-- Scripts -->
+<script>
+// Script para abrir el menú desplegable
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Script para abrir el contenedor de imágenes en tamaño grande
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+  var captionText = document.getElementById("description");
+  captionText.innerHTML = element.id;
+}
+</script>
+
+</body>
+</html>
